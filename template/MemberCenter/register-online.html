@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>注册</title>
+
+	<link rel="stylesheet" href="../../css/bootstrap.css" media="screen">
+	<link rel="stylesheet" href="../../css/hp_css.css">
+
+	<script type="text/javascript" src="../../build/flexible_css.debug.js"></script>
+	<script type="text/javascript" src="../../build/flexible.debug.js"></script>
+
+</head>
+<body>
+	<div class="homePage">
+		<!--header begin -->
+		<header class="hp-header">注册</header>
+		<div class="return"><a onclick="JavaScript:history.back(-1);" class="a-return"><img src="../../img/hp-left.png" class="a-rtn-icon"></a></div>
+		<!--header end -->
+		<!--main begin -->
+		<div class="hp-main">
+			<input type="text" name="text" id="int-fs" class="ss-ipt-btm ss-ipt-text ss-ipt0 ss-ipt1 " value="" placeholder="请输入账号">
+			<input type="text" name="text" class="ss-ipt-btm ss-ipt-text ss-ipt0 ss-ipt3" value="" placeholder="请输入推荐人编号">
+			<input type="password" name="text" class="ss-ipt-btm ss-ipt-text ss-ipt0 ss-ipt2 icon-02 ss-ipt4" value="" placeholder="请输入一级密码">
+			<div class="online" >
+				<input type="password" name="text" id="psd-01" class="psd-01" value="" placeholder="请输入二级密码">
+				
+				<span>
+					<img src="../../img/u24.png" id="look" class="look">
+				</span>
+			</div>
+			
+			<button class="ss-ipt-btm ss-in register1">在线注册</button>
+		</div>
+		<!--main end -->
+		
+	</div> 
+
+
+	<script type="text/javascript" src="../../js/jquery.min.js"></script>
+
+	
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$("#int-fs").focus();
+		
+  		$('.online span').click(function(){ 
+  			
+			if ($("#psd-01").attr("type") == "password") {
+				$("#psd-01").attr("type", "text")
+			}
+			else {
+				$("#psd-01").attr("type", "password")
+			}
+		})
+    });    
+		
+	</script>
+</body>
+</html>

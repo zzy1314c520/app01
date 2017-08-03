@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>密保设置</title>
+
+	<link rel="stylesheet" href="../../../css/bootstrap.css" media="screen">
+	<link rel="stylesheet" href="../../../css/hp_css.css">
+
+	<script type="text/javascript" src="../../../build/flexible_css.debug.js"></script>
+	<script type="text/javascript" src="../../../build/flexible.debug.js"></script>
+
+</head>
+<body>
+	<div class="homePage">
+		<!--header begin -->
+		<header class="hp-header">密保设置</header>
+		<div class="return"><a onclick="JavaScript:history.back(-1);" class="a-return"><img src="../../../img/hp-left.png" class="a-rtn-icon"></a></div>
+		<!--header end -->
+		<!--main begin -->
+		<div class="ssg-main">					
+			<ul class="ssg-ulst">
+				<li class="ssg-list" id="ss-sq"><a>密保问题</a></li>
+
+				<li class="ssg-list"><a>密保答案</a>
+					<input type="text" name="" class="ssg-ipt" id="ss-ipt-02">
+					<span class="ssg-span">不超过12位</span>
+				</li>
+			</ul>
+
+			<a href="../AccountManagement.html"><button class="ssg-btn">保存</button></a>
+
+
+			<div class="sq-main" id="next">					
+				<ul class="sq-ulst">
+					<li class="sq-list"><a>我父亲的名字</a></li>
+					<li class="sq-list"><a>我母亲的名字</a></li>
+					<li class="sq-list"><a>我配偶的名字</a></li>
+					<li class="sq-list"><a>我儿子的名字</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- 密保问题   下拉列表 -->
+		
+		<!--main end -->
+		
+	</div> 
+	<script type="text/javascript" src="../../../js/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(".sq-ulst li").click(function() {
+
+	        $(this).siblings('li').removeClass('change');  
+
+	        $(this).addClass('change');                     
+
+	    });
+	    $('#ss-sq').click(function(){
+			$('.sq-main').toggle();
+		})
+
+	
+		var obj_lis = $("#next li");
+		var next = document.getElementById("#next");
+	    for(i=0;i<obj_lis.length;i++){
+	        obj_lis[i].onclick = function(){
+	       		$("#ss-sq a").replaceWith($(this).html());
+	       		$('.sq-main').hide();
+	       }
+	    }
+	    $("#ss-ipt-02").focus();
+
+	</script>
+
+</body>
+</html>

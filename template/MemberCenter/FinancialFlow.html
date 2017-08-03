@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>财务流水</title>
+
+	<link rel="stylesheet" href="../../css/bootstrap.css" media="screen">
+	<link rel="stylesheet" href="../../css/hp_css.css">
+
+	<script type="text/javascript" src="../../build/flexible_css.debug.js"></script>
+	<script type="text/javascript" src="../../build/flexible.debug.js"></script>
+
+</head>
+<body>
+	<div class="homePage">
+		<!--header begin -->
+		<header class="hp-header">财务流水</header>
+		<div class="return"><a onclick="JavaScript:history.back(-1);" class="a-return"><img src="../../img/hp-left.png" class="a-rtn-icon"></a></div>
+		<!--header end -->
+		<!--main begin -->
+		<div class="td-main fflow-main">
+			<div type="text" class="fflow-ipt" id="ff-txt01"><a>流水类型</a></div>
+			<div class="box">
+				<ul class="ullist" id="text">
+					<li ><a>流水类型</a>  </li>
+					<li><a>奖金币</a>  </li>
+					<li><a>积分币</a>    </li>
+				</ul>
+				<button class="quxiao">取消</button>
+				<button class="queren">确认</button>
+			</div>
+
+			<ul class="rd-ulst mb-ulst td-ulst ff-ulst01">
+				<li>
+					<h5 class="cwd-h5 mb-h5">转账金额</h5><a >+<b>600</b>.00</a>
+				</li>
+				<li class="ff-list">
+					<span class="cwd-span">转入方：13287876878</span>
+					<span class="cwd-span2">2017-4-30 10:30</span>
+					<img src="../../img/hp-right.png" class="ff-img-right">
+				</li>
+			</ul>
+			<ul class="rd-ulst mb-ulst td-ulst ff-ulst ff-ulst01">
+				<li>
+					<h5 class="cwd-h5 mb-h5">转账金额</h5><a >-<b>600</b>.00</a>
+				</li>
+				<li class="ff-list">
+					<span class="cwd-span">转入方：13287876878</span>
+					<span class="cwd-span2">2017-4-30 10:30</span>
+					<img src="../../img/hp-right.png" class="ff-img-right">
+				</li>
+			</ul>
+		</div>
+		<!--main end -->
+	</div> 
+
+	<!-- <script type="text/javascript" src="../js/jquery.min.js"></script>
+	
+	
+	<script type="text/javascript">
+		$(".ff-val").click(function(){
+			$(".ff-hide").toggle();
+		});
+	</script> -->
+
+	<script type="text/javascript" src="../../js/jquery.min.js"></script>
+
+	
+	<script type="text/javascript">
+		$(".ff-ulst01").click(function(){
+			window.location.href="BonusDetails02.html";
+		});
+
+
+		$('#ff-txt01').click(function(){
+			$('.box').show();
+		})
+
+	
+		var obj_lis = document.getElementsByTagName("li");
+		var next = document.getElementById("#next");
+	    for(i=0;i<obj_lis.length;i++){
+	        obj_lis[i].onclick = function(){
+	       		$("#ff-txt01 a").replaceWith($(this).html());
+	       		$("li[class='bg-yuan']").removeAttr("class")
+	       		$(this).addClass("bg-yuan");
+	       }
+	    }	    
+			
+		$('.queren').click(function(){
+			$('.box').hide();
+		
+		})
+	</script>
+</body>
+</html>

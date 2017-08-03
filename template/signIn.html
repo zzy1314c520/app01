@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>登录</title>
+
+	<link rel="stylesheet" href="../css/bootstrap.css" media="screen">
+	<link rel="stylesheet" href="../css/hp_css.css">
+
+	<script type="text/javascript" src="../build/flexible_css.debug.js"></script>
+	<script type="text/javascript" src="../build/flexible.debug.js"></script>
+
+</head>
+<body>
+	<div class="homePage">
+		<!--header begin -->
+		<header class="hp-header">登录</header>
+		<div class="return"><a href="MemberCenter.html" class="a-return"><img src="../img/hp-left.png" class="a-rtn-icon"></a></div>
+		<!--header end -->
+		<!--main begin -->
+		<div class="hp-main">
+			<input type="text" name="text" id="int-fs" class="ss-ipt-btm ss-ipt-text ss-ipt0 ss-ipt1 " value="" placeholder="请输入账号">
+			<input type="password" name="text" class="ss-ipt-btm ss-ipt-text ss-ipt0 ss-ipt2" value="" placeholder="请输入密码">
+			<div class="forgotPassword ss-ipt-text"><a href="register/fontPassword.html">忘记登录密码</a></div>
+			<a href="MemberCenter.html"><button class="ss-ipt-btm ss-in">登录</button></a>
+			<a href="register/register.html"><button class="ss-ipt-btm ss-register1">注册</button></a>
+		</div>
+		<!--main end -->
+		
+	</div>
+
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+
+	
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$("#int-fs").focus();
+		
+    });    
+		
+	</script>
+</body>
+</html>

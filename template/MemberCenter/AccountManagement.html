@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>账户管理</title>
+
+	<link rel="stylesheet" href="../../css/bootstrap.css" media="screen">
+	<link rel="stylesheet" href="../../css/hp_css.css">
+
+	<script type="text/javascript" src="../../build/flexible_css.debug.js"></script>
+	<script type="text/javascript" src="../../build/flexible.debug.js"></script>
+
+</head>
+<body>
+	<div class="homePage">
+		<!--header begin -->
+		<header class="hp-header">账户管理</header>
+		<div class="return"><a onclick="JavaScript:history.back(-1);"  class="a-return"><img src="../../img/hp-left.png" class="a-rtn-icon"></a></div>
+		<!--header end -->
+		<!--main begin -->
+		<div class="ssg-main mp-main am-main">					
+			<!-- <ul class="ssg-ulst mp-ulst am-ulst">
+				<li class="ssg-list mp-list-01 am-list"><a>真实名字</a>
+					<input type="text" name="" class="ssg-ipt mp-ipt am-ipt" placeholder="设置后不可更改">
+				</li>
+				<li class="ssg-list mp-list-01 am-list"><a>推荐人编号</a>
+					<input type="text" name="" class="ssg-ipt mp-ipt am-ipt am-ipt-02" value="jwf9">
+				</li>
+				<li class="ssg-list mp-list-01 am-list" ><a>支付宝号</a>
+					<input type="text" name="" class="ssg-ipt mp-ipt2 am-ipt" placeholder="设置后不可更改">
+				</li>
+			</ul> -->
+			<ul class="ssg-ulst mp-ulst am-ulst-02">
+				<li class="ssg-list am-list-02" id="my-am"><a href="#" class="am-aa-02">我的账户</a>
+					<!-- <input type="password" name="" class="ssg-ipt mp-ipt" placeholder="*******"> -->
+				</li>
+				<li class="ssg-list am-list-02" id="my-am02"><a href="#" class="am-aa-02">修改一级密码</a>
+					<!-- <input type="password" name="" class="ssg-ipt mp-ipt" placeholder="*******"> -->
+				</li>
+				<li class="ssg-list am-list-02" id="my-am03"><a href="#" class="am-aa-02">修改二级密码</a>
+					<!-- <input type="password" name="" class="ssg-ipt mp-ipt" placeholder="至少6位"> -->
+				</li>
+				<li class="ssg-list am-list-02" id="my-am04"><a href="#" class="am-aa-02">设置密保</a>
+					<!-- <input type="password" name="" class="ssg-ipt mp-ipt2" placeholder="至少6位"> -->
+				</li>
+			</ul>
+
+			<a href="../signIn.html"><button class="ssg-btn am-btn-top">退出登录</button></a>
+		</div>
+		<!--main end -->
+		
+	</div> 
+
+	<script type="text/javascript" src="../../js/jquery.min.js"></script>
+	<script type="text/javascript">
+
+		$("#my-am").click(function(){
+		    window.location.href="AccountManagement/myId.html"; 
+		})
+		$("#my-am02").click(function(){
+		    window.location.href="AccountManagement/ModifyPassword01.html";  
+		})
+		$("#my-am03").click(function(){
+		    window.location.href="AccountManagement/ModifyPassword02.html";  
+		})
+		$("#my-am04").click(function(){
+		    window.location.href="AccountManagement/SecuritySettings.html";  
+		})
+	</script>
+	
+
+</body>
+</html>

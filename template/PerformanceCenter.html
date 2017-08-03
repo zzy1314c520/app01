@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>业绩中心</title>
+
+	<link rel="stylesheet" href="../css/bootstrap.css" media="screen">
+	<link rel="stylesheet" href="../css/hp_css.css">
+
+	<script type="text/javascript" src="../build/flexible_css.debug.js"></script>
+	<script type="text/javascript" src="../build/flexible.debug.js"></script>
+	
+</head>
+<body>
+	<div class="homePage">
+		<!--header begin -->
+		<header class="hp-header">业绩中心</header>
+		<!-- <div class="return"><a href="../index.html" class="a-return"><img src="../img/hp-left.png"></a></div> -->
+		<!--header end -->
+		<div class="pc-main">
+			<ul class="ulst">
+				<li>
+					<a href="#">￥<b>899</b>.00</a><br>
+					<span>奖金币</span>
+				</li>
+				<li>
+					<a href="#">￥<b>40</b>.00</a><br>
+					<span>积分币</span>
+				</li>
+				<li>
+					<a href="#">￥<b>1024</b>.00</a><br>
+					<span>总收入</span>
+				</li>
+			</ul>
+			<div class="pc-xian"></div>
+			<ul class="ulst ulst2">
+				<li>
+					<a href="#">100.00</a><br>
+					<span>推广收益</span>
+				</li>
+				<li>
+					<a href="#">2209.12</a><br>
+					<span>管理收益(未开通)</span>
+				</li>
+				<li>
+					<a href="#">100.00</a><br>
+					<span>合伙人分红(未开通)</span>
+				</li>
+			</ul>
+			<ul class="ulst ulst2">
+				<li>
+					<a href="#">2209.12</a><br>
+					<span>公司分红(未开通)</span>
+				</li>
+				<li>
+					<a href="#">100.00</a><br>
+					<span>铜卡会员(冻结)</span>
+				</li>
+				<li>
+					<a href="#">2209.12</a><br>
+					<span>银卡会员(冻结)</span>
+				</li>
+			</ul>
+			<ul class="ulst ulst2">
+				<li>
+					<a href="#">100.00</a><br>
+					<span>金卡会员(冻结)</span>
+				</li>
+				<li>
+					<a href="#">2209.12</a><br>
+					<span>合伙人(冻结)</span>
+				</li>
+				<li>
+					<a href="#">2209.12</a><br>
+					<span>冻结积分</span>
+				</li>
+			</ul>
+		</div>
+		<!--footer begin -->
+		<footer class="hp-footer">
+			<ul class="footer-tab">
+				<li id="ft-top-01">
+					<a>
+						<img src="../img/icon/icon-01.png" class="icon-001">
+						<img src="../img/icon/icon-001.png" class="icon-001">
+					</a>
+					<!-- <a href="#"><img src="img/icon/icon-01.png" class=" hidden"></a> -->
+					<span class="span01">大讲堂</span>
+				</li>
+				<li id="ft-top-02">
+					<!-- <a href="#"><img src="img/icon/icon-002.png"  class=" hide"></a> -->
+					<a>
+						<img src="../img/icon/icon-02.png"  class="icon-002 "/>
+						<img src="../img/icon/icon-002.png" class="icon-002 ">
+					</a>
+					<span>课程购买</span>
+				</li>
+				<li class="active"  id="ft-top-03">
+					<!-- <a href="#"><img src="img/icon/icon-003.png" class=" hide"></a> -->
+					<a>
+						<img src="../img/icon/icon-03.png" class="icon-003 ">
+						<img src="../img/icon/icon-003.png" class=" icon-003">
+					</a>
+					<span class="default-color">业绩中心</span>
+				</li>
+				<li id="ft-top-04">
+					<!-- <a href="#"><img src="img/icon/icon-004.png" class=" hide"></a> -->
+					<a>
+						<img src="../img/icon/icon-04.png" class="icon-004">
+						<img src="../img/icon/icon-004.png" class="icon-004">
+					</a>
+					<span>个人资料</span>
+				</li>
+			</ul>
+		</footer>
+		<!--footer end -->
+	</div> 
+
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+
+	
+	<script type="text/javascript">
+		$(".footer-tab li").click(function(){
+			$("li[class='active']").removeAttr("class");
+			$(this).addClass("active");
+
+			$("li span[class='default-color']").removeAttr("class");
+			$(this).find('span').addClass('default-color');
+
+
+			
+		});	
+
+		$("#ft-top-01").click(function(){
+		    window.location.href="../index.html";  
+		})
+		$("#ft-top-02").click(function(){
+		    window.location.href="CoursePurchase.html";  
+		})
+		$("#ft-top-03").click(function(){
+		    window.location.href="PerformanceCenter.html";  
+		})
+		$("#ft-top-04").click(function(){
+		    window.location.href="MemberCenter.html";  
+		})
+	</script>
+</body>
+</html>

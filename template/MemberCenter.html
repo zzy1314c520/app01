@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>会员中心</title>
+
+	<link rel="stylesheet" href="../css/bootstrap.css" media="screen">
+	<link rel="stylesheet" href="../css/hp_css.css">
+
+	<script type="text/javascript" src="../build/flexible_css.debug.js"></script>
+	<script type="text/javascript" src="../build/flexible.debug.js"></script>
+
+</head>
+<body>
+	<div class="homePage">
+		<!--header begin -->
+		<header class="hp-header">会员中心</header>
+		<!--header end -->
+		<!--main begin -->
+		<div class="pc-main mc-main">
+			<div class="mc-top-01">
+				<ul class="mc-ulst-top">
+					<li class="mc-list-top mc-list-top02">
+						<a class="mc-aa-01">会员编号</a>
+						<span class="mc-span-01">skjgpgp</span>
+					</li>
+					<li class="mc-list-top">
+						<a class="mc-aa-01">会员级别</a>
+						<span class="mc-span-01">铜卡会员</span>
+						<img src="../img/cp-icon1.png" class="img-xing-2">
+						<img src="../img/cp-icon1.png" class="img-xing-3">
+					</li>
+					<li class="mc-list-top">
+						<a class="mc-aa-01">手机号</a>
+						<span class="mc-span-03">15209878767</span>
+						<a href="MemberCenter/AccountManagement.html"><span class="mc-span-01 mc-span-02">账户管理<img src="../img/mc-icon-right.png"></span></a>
+					</li>
+				</ul>
+			</div>
+			<ul class="ulst mc-ulst">
+				<li class="mc-list">
+					<a href="#">￥<b>899</b>.00</a><br>
+					<span>奖金币</span>
+				</li>
+				<li class="mc-list">
+					<a href="#">￥<b>40</b>.00</a><br>
+					<span>积分币</span>
+				</li>
+				<li class="mc-list">
+					<a href="#">￥<b>1024</b>.00</a><br>
+					<span>总收入</span>
+				</li>
+			</ul>
+
+			<div class="mc-icon-clk" >
+				<ul id="clk-ul-01" class="clk-ul-01">
+					<li id="clk-li-01" class="clk-li-01"><a href="MemberCenter/Recharge.html"></a></li>
+					<li id="clk-li-01" class="clk-li-01"><a href="MemberCenter/TransferAccounts.html"></a></li>
+					<li id="clk-li-01" class="clk-li-01"><a href="MemberCenter/Withdrawals.html"></a></li>
+
+					<li id="clk-li-01" class="clk-li-01"><a href="MemberCenter/MyBonus.html"></a></li>
+					<li id="clk-li-01" class="clk-li-01"><a href="MemberCenter/FinancialFlow.html"></a></li>
+					<li id="clk-li-01" class="clk-li-01"><a href="MemberCenter/MallCenter.html"></a></li>
+				
+					<li id="clk-li-01" class="clk-li-01"><a href="MemberCenter/register-online.html"></a></li>
+					<li id="clk-li-01" class="clk-li-01"><a href="MemberCenter/InvitingFriends.html"></a></li>
+					<li id="clk-li-01" class="clk-li-01"><a href="MemberCenter/AnnouncementList.html"></a></li>
+				</ul>
+
+			</div>
+
+		</div>
+		<!--main end -->
+		<footer class="hp-footer">
+			<ul class="footer-tab">
+				<li id="ft-top-01">
+					<a>
+						<img src="../img/icon/icon-01.png" class="icon-001">
+						<img src="../img/icon/icon-001.png" class="icon-001">
+					</a>
+					<!-- <a href="#"><img src="img/icon/icon-01.png" class=" hidden"></a> -->
+					<span class="span01">大讲堂</span>
+				</li>
+				<li id="ft-top-02">
+					<!-- <a href="#"><img src="img/icon/icon-002.png"  class=" hide"></a> -->
+					<a>
+						<img src="../img/icon/icon-02.png"  class="icon-002 "/>
+						<img src="../img/icon/icon-002.png" class="icon-002 ">
+					</a>
+					<span>课程购买</span>
+				</li>
+				<li id="ft-top-03">
+					<!-- <a href="#"><img src="img/icon/icon-003.png" class=" hide"></a> -->
+					<a>
+						<img src="../img/icon/icon-03.png" class="icon-003 ">
+						<img src="../img/icon/icon-003.png" class=" icon-003">
+					</a>
+					<span>业绩中心</span>
+				</li>
+				<li class="active" id="ft-top-04">
+					<!-- <a href="#"><img src="img/icon/icon-004.png" class=" hide"></a> -->
+					<a>
+						<img src="../img/icon/icon-04.png" class="icon-004">
+						<img src="../img/icon/icon-004.png" class="icon-004">
+					</a>
+					<span class="default-color" >个人资料</span>
+				</li>
+			</ul>
+		</footer>
+		<!--footer end -->
+	</div> 
+
+
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+
+	
+	<script type="text/javascript">
+		$(".footer-tab li").click(function(){
+			$("li[class='active']").removeAttr("class");
+			$(this).addClass("active");
+
+			$("li span[class='default-color']").removeAttr("class");
+			$(this).find('span').addClass('default-color');
+		});
+
+
+		$("#ft-top-01").click(function(){
+		    window.location.href="../index.html";  
+		})
+		$("#ft-top-02").click(function(){
+		    window.location.href="CoursePurchase.html";  
+		})
+		$("#ft-top-03").click(function(){
+		    window.location.href="PerformanceCenter.html";  
+		})
+		$("#ft-top-04").click(function(){
+		    window.location.href="MemberCenter.html";  
+		})
+	</script>
+</body>
+</html>

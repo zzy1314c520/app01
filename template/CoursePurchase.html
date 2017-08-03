@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>课程购买</title>
+
+	<link rel="stylesheet" href="../css/bootstrap.css" media="screen">
+	<link rel="stylesheet" href="../css/hp_css.css">
+
+	<script type="text/javascript" src="../build/flexible_css.debug.js"></script>
+	<script type="text/javascript" src="../build/flexible.debug.js"></script>
+	
+</head>
+<body>
+	<div class="homePage">
+		<!--header begin -->
+		<header class="hp-header">课程购买</header>
+		<!-- <div class="return"><a href="../index.html" class="a-return"><img src="../img/hp-left.png"></a></div> -->
+		<!--header end -->
+		<div class="cp-main">
+			
+			<ul class="cp-ulst">
+				<li>
+					<img src="../img/cp-icon2.png" class="img-xing">
+					<img src="../img/cp-icon2.png" class="img-xing">
+				</li>
+				<li><span>铜卡会员</span></li>
+				<li><a href="">￥398</a></li>
+			</ul>
+			<a href="PaymentCenter/PaymentCenter.html"><button class="ss-ipt-btm cp-phse">购买学习</button></a>
+
+			<div class="cp-box">
+			</div>
+
+			
+			<ul class="cp-ulst">
+				<li>
+					<img src="../img/cp-icon2.png" class="img-xing">
+					<img src="../img/cp-icon2.png" class="img-xing">
+					<img src="../img/cp-icon2.png" class="img-xing">
+				</li>
+				<li><span>银卡会员</span></li>
+				<li><a href="">￥698</a></li>
+			</ul>
+			<a href="PaymentCenter/PaymentCenter02.html"><button class="ss-ipt-btm cp-phse">购买学习</button></a>
+			<div class="cp-box">
+			</div>
+
+			
+			<ul class="cp-ulst">
+				<li>
+					<img src="../img/cp-icon2.png" class="img-xing">
+					<img src="../img/cp-icon2.png" class="img-xing">
+					<img src="../img/cp-icon2.png" class="img-xing">
+					<img src="../img/cp-icon2.png" class="img-xing">
+				</li>
+				<li><span>金卡会员</span></li>
+				<li><a href="">￥998</a></li>
+			</ul>
+			<a href="PaymentCenter/PaymentCenter03.html"><button class="ss-ipt-btm cp-phse">购买学习</button></a>
+
+			<div class="cp-box">
+			</div>
+
+		
+			<ul class="cp-ulst">
+				<li>
+					<img src="../img/cp-icon2.png" class="img-xing">
+					<img src="../img/cp-icon2.png" class="img-xing">
+					<img src="../img/cp-icon2.png" class="img-xing">
+					<img src="../img/cp-icon2.png" class="img-xing">
+					<img src="../img/cp-icon2.png" class="img-xing">
+				</li>
+				<li><span>至尊会员</span></li>
+				<li><a href="">￥5000</a></li>
+			</ul>
+			<a href="PaymentCenter/PaymentCenter04.html"><button class="ss-ipt-btm cp-phse">购买学习</button></a>
+			
+			<div class="cp-box">
+			</div>
+		</div>
+		<!-- footer begin -->
+		<footer class="hp-footer">
+			<ul class="footer-tab">
+				<li id="ft-top-01">
+					<a>
+						<img src="../img/icon/icon-01.png" class="icon-001">
+						<img src="../img/icon/icon-001.png" class="icon-001">
+					</a>
+					<!-- <a href="#"><img src="img/icon/icon-01.png" class=" hidden"></a> -->
+					<span class="span01">大讲堂</span>
+				</li>
+				<li class="active" id="ft-top-02">
+					<!-- <a href="#"><img src="img/icon/icon-002.png"  class=" hide"></a> -->
+					<a>
+						<img src="../img/icon/icon-02.png"  class="icon-002 "/>
+						<img src="../img/icon/icon-002.png" class="icon-002 ">
+					</a>
+					<span class="default-color">课程购买</span>
+				</li>
+				<li id="ft-top-03">
+					<!-- <a href="#"><img src="img/icon/icon-003.png" class=" hide"></a> -->
+					<a>
+						<img src="../img/icon/icon-03.png" class="icon-003 ">
+						<img src="../img/icon/icon-003.png" class=" icon-003">
+					</a>
+					<span>业绩中心</span>
+				</li>
+				<li id="ft-top-04">
+					<!-- <a href="#"><img src="img/icon/icon-004.png" class=" hide"></a> -->
+					<a>
+						<img src="../img/icon/icon-04.png" class="icon-004">
+						<img src="../img/icon/icon-004.png" class="icon-004">
+					</a>
+					<span>个人资料</span>
+				</li>
+			</ul>
+		</footer>
+		<!--footer end -->
+	</div> 
+
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+
+	
+	<script type="text/javascript">
+		$(".footer-tab li").click(function(){
+			$("li[class='active']").removeAttr("class");
+			$(this).addClass("active");
+
+			$("li span[class='default-color']").removeAttr("class");
+			$(this).find('span').addClass('default-color');
+
+			
+		});
+
+
+		$("#ft-top-01").click(function(){
+		    window.location.href="../index.html";  
+		})
+		$("#ft-top-02").click(function(){
+		    window.location.href="CoursePurchase.html";  
+		})
+		$("#ft-top-03").click(function(){
+		    window.location.href="PerformanceCenter.html";  
+		})
+		$("#ft-top-04").click(function(){
+		    window.location.href="MemberCenter.html";  
+		})
+	</script>
+</body>
+</html>

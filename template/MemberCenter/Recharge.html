@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>充值</title>
+
+	<link rel="stylesheet" href="../../css/bootstrap.css" media="screen">
+	<link rel="stylesheet" href="../../css/hp_css.css">
+
+	<script type="text/javascript" src="../../build/flexible_css.debug.js"></script>
+	<script type="text/javascript" src="../../build/flexible.debug.js"></script>
+
+</head>
+<body>
+	<div class="homePage">
+		<!--header begin -->
+		<header class="hp-header">充值
+				<a href="RechargeDetails.html"><span class="ww-right-text">明细</span></a>
+		</header>
+		<div class="return"><a onclick="JavaScript:history.back(-1);"  class="a-return">
+			<img src="../../img/hp-left.png" class="a-rtn-icon"></a>	
+		</div>
+
+		<!--header end -->
+		<!--main begin -->
+		<div class="hp-main ww-main re-main fflow-main">
+			<h3 class="ss-ipt-text ft-txt re-text02">充值金额</h3>
+			<input type="text" name="text" class="ss-ipt-btm ss-ipt-text ss-ipt0 re-top" value="" placeholder="请输入充值金额">
+			<div type="text" class="ss-ipt-btm ss-ipt-text ss-ipt0 re-top re-a-lht" id="ff-txt01"><a>请选择充值方式</a></div>
+			<div class="box box02">
+				<ul class="ullist ulst-bg" id="text">
+					<li><a>微信充值</a></li>
+					<li><a>支付宝充值</a></li>
+				</ul>
+				<img src="../../img/weixin.png" class="weixin">
+				<img src="../../img/zhifubao.png" class="zhifubao"> 
+				<button class="quxiao">取消</button>
+				<button class="queren">确认</button>
+			</div>
+			<a href=""><button class="ss-ipt-btm ww-btm re-top02">充值</button></a>
+		</div>
+		<!--main end -->>
+	</div> 
+
+
+	<script type="text/javascript" src="../../js/jquery.min.js"></script>
+
+	
+	<script type="text/javascript">
+
+		$('#ff-txt01').click(function(){
+			$('.box').toggle();
+		})
+
+	
+		var obj_lis = document.getElementsByTagName("li");
+		var next = document.getElementById("#next");
+	    for(i=0;i<obj_lis.length;i++){
+	        obj_lis[i].onclick = function(){
+	       		$("#ff-txt01 a").replaceWith($(this).html());
+	       		$("li[class='bg-yuan']").removeAttr("class")
+	       		$(this).addClass("bg-yuan");
+	       }
+	    }	    
+			
+		$('.queren').click(function(){
+			$('.box').hide();
+		
+		})
+	</script>
+
+</body>
+</html>
