@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+
+	<title>homePage</title>
+
+	<link rel="stylesheet" href="css/bootstrap.css" media="screen">
+	<link rel="stylesheet" href="css/hp_css.css"> 
+	<script type="text/javascript" src="build/flexible_css.debug.js"></script>
+	<script type="text/javascript" src="build/flexible.debug.js"></script>
+	
+	
+</head>
+<body>
+	<div class="homePage">
+		<!--header begin -->
+		<header class="hp-header">大讲堂</header>
+		<!--header end -->
+		<!--nav begin -->
+		<nav class="hp-nav">
+			<ul>
+				<li><a href="#" class="default-color">全部</a></li>
+				<li><a href="#">正能量</a></li>
+				<li><a href="#">健康知识</a></li>
+				<li><a href="#">孩子教育</a></li>
+				<li><a href="#">传统文化</a></li>
+				<li><a href="#">正能量laaaa</a></li>
+				<li><a href="#">健康知识</a></li>
+				<li><a href="#">孩子教育</a></li>
+				<li><a href="#">传统文化</a></li>
+
+			</ul>
+		</nav>
+		<!--nav end -->
+		<!--main begin -->
+		<div class="hp-main">
+			<a href="template/all_details.html"><img src="img/u21.png" class="hp-video"></a> 
+			<h5><a href="template/all_details.html">国博讲堂王蒙：传统文化的几个问题</a></h5>	
+			<a href="template/all_details.html"><img src="img/u21.png" class="hp-video"></a> 
+			<h5><a href="template/all_details.html">国博讲堂王蒙：传统文化的几个问题</a></h5>
+		</div>
+
+		<!--main end -->
+		<!--footer begin -->
+		<footer class="hp-footer">
+			<ul class="footer-tab">
+				<li class="active" id="ft-top-01">
+					<a>
+						<img src="img/icon/icon-01.png" class="icon-001">
+						<img src="img/icon/icon-001.png" class="icon-001">
+					</a>
+					<!-- <a href="#"><img src="img/icon/icon-01.png" class=" hidden"></a> -->
+					<span class="span01 default-color">大讲堂</span>
+				</li>
+				<li id="ft-top-02">
+					<!-- <a href="#"><img src="img/icon/icon-002.png"  class=" hide"></a> -->
+					<a>
+						<img src="img/icon/icon-02.png"  class="icon-002 "/>
+						<img src="img/icon/icon-002.png" class="icon-002 ">
+					</a>
+					<span>课程购买</span>
+				</li>
+				<li id="ft-top-03">
+					<!-- <a href="#"><img src="img/icon/icon-003.png" class=" hide"></a> -->
+					<a>
+						<img src="img/icon/icon-03.png" class="icon-003 ">
+						<img src="img/icon/icon-003.png" class=" icon-003">
+					</a>
+					<span>业绩中心</span>
+				</li>
+				<li id="ft-top-04">
+					<!-- <a href="#"><img src="img/icon/icon-004.png" class=" hide"></a> -->
+					<a>
+						<img src="img/icon/icon-04.png" class="icon-004">
+						<img src="img/icon/icon-004.png" class="icon-004">
+					</a>
+					<span>个人资料</span>
+				</li>
+			</ul>
+		</footer>
+		<!--footer end -->
+	</div> 
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+
+	
+	<script type="text/javascript">
+		$(".footer-tab li").click(function(){
+			$("li[class='active']").removeAttr("class");
+			$(this).addClass("active");
+
+			$("li span[class='default-color']").removeAttr("class");
+			$(this).find('span').addClass('default-color');
+		});
+
+
+		$("#ft-top-01").click(function(){
+		    window.location.href="index.html";  
+		})
+		$("#ft-top-02").click(function(){
+		    window.location.href="template/CoursePurchase.html";  
+		})
+		$("#ft-top-03").click(function(){
+		    window.location.href="template/PerformanceCenter.html";  
+		})
+		$("#ft-top-04").click(function(){
+		    window.location.href="template/MemberCenter.html";  
+		})
+		$(".hp-nav li").click(function(){
+			$("li a[class='default-color']").removeAttr("class");
+			$(this).find('a').addClass('default-color');
+		});
+	</script>
+</body>
+</html>
